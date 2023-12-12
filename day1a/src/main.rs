@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::{BufRead, BufReader};
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("day1-a/input.txt")?;
+    let file = File::open("day1a/input.txt")?;
     let result: u32 = BufReader::new(file)
         .lines()
         .map(|l| {

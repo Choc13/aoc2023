@@ -36,7 +36,7 @@ fn parse_digits2(str: &str) -> Vec<u32> {
 }
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("day1-b/input.txt")?;
+    let file = File::open("day1b/input.txt")?;
     let result: u32 = BufReader::new(file)
         .lines()
         .filter_map(|l| {
